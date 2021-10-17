@@ -17,7 +17,7 @@ pip install -r requirements.txt
 Download the code and dataset with the command:
 
 ```bash
-git clone https://github.com/ninglab/Tacfc.git
+git clone https://github.com/ninglab/TransferAct.git
 ```
 
 ## Data Processing
