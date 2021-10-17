@@ -1,10 +1,3 @@
-```
- File              : README.md
- Author            : Vishal Dey <dey.78@osu.edu>
- Date              : Sat 16 Oct 2021 20:48:41
- Last Modified Date: Sat 16 Oct 2021 20:50:00
- Last Modified By  : Vishal Dey <dey.78@osu.edu>
-```
 # Improving Compound Activity Classification via Deep Transfer and Representation Learning
 
 This repository is the official implementation of [Improving Compound Activity Classification via Deep Transfer and Representation Learning](link). This paper is under review by XXX.
@@ -32,7 +25,7 @@ git clone https://github.com/ninglab/Tacfc.git
 ### 1. Use provided processed dataset
 
 One can use our provided processed dataset in `./data/pairs/`: the dataset of pairs of processed balanced assays $\mathcal{P}$ . Check the details of bioassay selection, processing, and assay pair selection in our paper in `Section 5.1.1` and `Section 5.1.2`, respectively. 
-We provided our dataset of pairs as `data/pairs.tar.gz` compressed file. Please use tar to de-compress it.
+We provided our dataset of pairs as`data/pairs.tar.gz` compressed file. Please use tar to de-compress it.
 
 ### 2. Use own dataset
 
