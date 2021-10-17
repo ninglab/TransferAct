@@ -1,0 +1,17 @@
+import torch
+
+def save_scores(scores, attn_path):
+
+	with open(attn_path, 'a') as f:
+		txt = ','.join(map(str, ['{:.2e}'.format(_) for _ in scores.flatten().tolist()]))
+		print(txt, file=f)
+
+
+def binary_accuracy(output: torch.Tensor, target: torch.Tensor) -> float:
+	"""Computes the accuracy for binary classification"""
+	with torch.no_grad():
+		batch_size = target.size(0)
+		pred = (output >= 0.5).float().t().view(-1)
+		correct = pred.eq(target.view(-1)).float().sum()
+		correct.mul_(100. / batch_size)
+		return correct
