@@ -1,6 +1,6 @@
 # Improving Compound Activity Classification via Deep Transfer and Representation Learning
 
-This repository is the official implementation of [Improving Compound Activity Classification via Deep Transfer and Representation Learning](link). This paper is under review by XXX.
+This repository is the official implementation of [Improving Compound Activity Classification via Deep Transfer and Representation Learning](link). 
 
 ## Requirements
 
@@ -17,7 +17,7 @@ pip install -r requirements.txt
 Download the code and dataset with the command:
 
 ```bash
-git clone https://github.com/ninglab/TransferAct.git
+git clone https://github.com/ninglab/Tacfc.git
 ```
 
 ## Data Processing
@@ -25,7 +25,7 @@ git clone https://github.com/ninglab/TransferAct.git
 ### 1. Use provided processed dataset
 
 One can use our provided processed dataset in `./data/pairs/`: the dataset of pairs of processed balanced assays $\mathcal{P}$ . Check the details of bioassay selection, processing, and assay pair selection in our paper in `Section 5.1.1` and `Section 5.1.2`, respectively. 
-We provided our dataset of pairs as`data/pairs.tar.gz` compressed file. Please use tar to de-compress it.
+We provided our dataset of pairs as `data/pairs.tar.gz` compressed file. Please use tar to de-compress it.
 
 ### 2. Use own dataset
 
@@ -61,7 +61,7 @@ python code/train_aada.py --source_data_path <source_assay_csv_file> --target_da
 
 `batch_size` specifies the batch size.
 
-`ffn_hidden_size` and `fan_num_layers` specify the number of hidden units and layers, respectively, in the fully connected network used as the classifier.
+`ffn_hidden_size` and `ffn_num_layers` specify the number of hidden units and layers, respectively, in the fully connected network used as the classifier.
 
 `epochs` specifies the total number of epochs.
 
@@ -177,3 +177,6 @@ Use `python chemprop/train.py -h` to check the meaning of other parameters.
    ```bash
    python chemprop/predict.py --test_path <test_csv_file> --checkpoint_dir <chkpt_dir> --preds_path <pred_file>
 
+## Compound Prioritization using dmpna:
+
+Please refer to the `README.md` in the `comprank` directory.
