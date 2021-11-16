@@ -1,6 +1,6 @@
 # Improving Compound Activity Classification via Deep Transfer and Representation Learning
 
-This repository is the official implementation of [Improving Compound Activity Classification via Deep Transfer and Representation Learning](link). 
+This repository is the official implementation of [Improving Compound Activity Classification via Deep Transfer and Representation Learning](https://arxiv.org/abs/2111.07439). 
 
 ## Requirements
 
